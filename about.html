@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Harrington Breeze</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <style>
+    @keyframes rollIn {
+      0% {
+        opacity: 0;
+        transform: translateX(-100%) rotate(-360deg);
+      }
+      100% {
+        opacity: 1;
+        transform: translateX(0) rotate(0deg);
+      }
+    }
+
+    .logo {
+      font-size: 2rem;
+      font-weight: bold;
+      text-align: center;
+      margin-top: 20px;
+      animation: rollIn 1s ease-out;
+    }
+
+    .top-header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    nav#mainNav ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      list-style: none;
+      padding: 0;
+      margin: 10px 0;
+    }
+
+    nav#mainNav ul li {
+      margin: 5px;
+    }
+
+    nav#mainNav ul li a {
+      padding: 8px 16px;
+      background-color: #d32f2f;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    nav#mainNav ul li a:hover {
+      background-color: #b71c1c;
+    }
+
+    /* Hide description and price initially */
+    .description, .price {
+      display: none;
+      margin-top: 10px;
+      font-size: 1em;
+      color: #444;
+    }
+
+    .description.show, .price.show {
+      display: block;
+    }
+
+    .item {
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header with Logo and Nav -->
+  <header>
+    <div class="top-header">
+      <div class="logo">Harrington Breeze</div>
+      <nav id="mainNav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="breakfast.html">Breakfast</a></li>
+          <li><a href="burgers.html">Burgers</a></li>
+          <li><a href="kebabs.html">Kebabs</a></li>
+          <li><a href="seafood.html">Seafood</a></li>
+          <li><a href="addons.html">Add-Ons</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Welcome to Harrington Breeze</h1>
+    <p>Takeaway done right! Serving up burgers, fish & chips, kebabs, and more with a great view of the water.</p>
+  </section>
+
+
+  <main>
+    <section class="about-content">
+      <h2>About Us</h2>
+      <p>We opened in October 2022 and serve up original Portuguese burgers, tasty kebabs, and crispy fish and chips – all freshly made just for you!</p>
+      <p>Our customers absolutely love our food! They say our burgers are the best, our kebabs are awesome, and our fish and chips are exceptional.</p>
+      <p>Come visit us and enjoy delicious meals while gazing at the beautiful waterfront. We're passionate about making yummy food just for you. See you soon at Harrington Breeze for a delightful dining experience!</p>
+    </section>
+
+    <section class="social-links">
+      <h3>Follow Us on Social Media</h3>
+      <div class="socials">
+        <a href="https://www.facebook.com/harringtonbreeze" target="_blank">Facebook</a> |
+        <a href="https://www.instagram.com/harringtonbreeze" target="_blank">Instagram</a> |
+        <a href="https://www.tiktok.com/@harringtonbreeze" target="_blank">TikTok</a>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <h2>Contact</h2>
+    <p><strong>Opening Hours:</strong> 8:30 AM – 7:00 PM</p>
+    <p><strong>Delivery:</strong> 11:30 AM – 5:30 PM</p>
+    <p><strong>Address:</strong> 3/15 Beach Street, Harrington NSW 2427</p>
+    <p><strong>Phone:</strong> <a href="tel:+61405618044">+61 405 618 044</a></p>
+    <p><strong>Email:</strong> <a href="mailto:adhippandey2007@gmail.com">adhippandey2007@gmail.com</a></p>
+    <div class="footer-nav">
+        <a href="index.html">Home</a> |
+        <a href="burgers.html">Burgers</a> |
+        <a href="kebabs.html">Kebabs</a> |
+        <a href="seafood.html">Seafood</a> |
+        <a href="addons.html">Addons</a> |
+        <a href="about.html">About</a> |
+        <a href="contact.html">Contact</a>
+      </div>
+    <p style="margin-top: 1rem; font-size: 0.9rem; color: #888;">Website created by Adhip Pandey using Visual Studio Code</p>
+  </footer>
+</body>
+</html>

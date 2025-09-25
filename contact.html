@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Harrington Breeze</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <style>
+    @keyframes rollIn {
+      0% {
+        opacity: 0;
+        transform: translateX(-100%) rotate(-360deg);
+      }
+      100% {
+        opacity: 1;
+        transform: translateX(0) rotate(0deg);
+      }
+    }
+
+    .logo {
+      font-size: 2rem;
+      font-weight: bold;
+      text-align: center;
+      margin-top: 20px;
+      animation: rollIn 1s ease-out;
+    }
+
+    .top-header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    nav#mainNav ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      list-style: none;
+      padding: 0;
+      margin: 10px 0;
+    }
+
+    nav#mainNav ul li {
+      margin: 5px;
+    }
+
+    nav#mainNav ul li a {
+      padding: 8px 16px;
+      background-color: #d32f2f;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    nav#mainNav ul li a:hover {
+      background-color: #b71c1c;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 40px 20px;
+      background: #f8f8f8;
+    }
+
+    /* Contact and Form Sections */
+    .contact {
+      padding: 40px 20px;
+      background: #fff;
+      text-align: center;
+    }
+
+    .contact h2 {
+      margin-bottom: 20px;
+    }
+
+    .contact-details {
+      margin-bottom: 30px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    input, select, textarea, button {
+      padding: 10px;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      background-color: #d32f2f;
+      color: white;
+      cursor: pointer;
+      border: none;
+    }
+
+    button:hover {
+      background-color: #b71c1c;
+    }
+
+    .socials a {
+      margin: 0 5px;
+      color: #d32f2f;
+      text-decoration: none;
+    }
+
+    .socials a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .footer-content {
+      margin-bottom: 10px;
+    }
+
+    .footer-nav a {
+      color: #ddd;
+      margin: 0 5px;
+      text-decoration: none;
+    }
+
+    .footer-nav a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header with Logo and Nav -->
+  <header>
+    <div class="top-header">
+      <div class="logo">Harrington Breeze</div>
+      <nav id="mainNav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="breakfast.html">Breakfast</a></li>
+          <li><a href="burgers.html">Burgers</a></li>
+          <li><a href="kebabs.html">Kebabs</a></li>
+          <li><a href="seafood.html">Seafood</a></li>
+          <li><a href="addons.html">Add-Ons</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Welcome to Harrington Breeze</h1>
+    <p>Takeaway done right! Serving up burgers, fish & chips, kebabs, and more with a great view of the water.</p>
+  </section>
+
+  <main>
+
+    <!-- Feedback Form -->
+    <section id="feedback-form" class="contact">
+      <h2>Feedback</h2>
+      <p>We'd love to hear your thoughts! Please fill out the form below:</p>
+      <form action="submit_feedback.php" method="POST">
+        <label for="customerName">Your Name:</label>
+        <input type="text" id="customerName" name="customerName" required>
+
+        <label for="rating">Rating:</label>
+        <select id="rating" name="rating" required>
+          <option value="">Select</option>
+          <option value="5">⭐⭐⭐⭐⭐ - Excellent</option>
+          <option value="4">⭐⭐⭐⭐ - Very Good</option>
+          <option value="3">⭐⭐⭐ - Good</option>
+          <option value="2">⭐⭐ - Fair</option>
+          <option value="1">⭐ - Poor</option>
+        </select>
+
+        <label for="feedback">Your Feedback:</label>
+        <textarea id="feedback" name="feedback" rows="5" required></textarea>
+
+        <button type="submit">Submit Feedback</button>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <section class="footer-content">
+      <h2>Contact Us</h2>
+      <p>Visit us at: 3/15 Beach Street, Harrington NSW 2427</p>
+      <p>Phone: <a href="tel:+61405618044">+61 405 618 044</a></p>
+      <p>Email: <a href="mailto:adhippandey2007@gmail.com">adhippandey2007@gmail.com</a></p>
+      <div class="socials">
+        <a href="https://www.facebook.com/harringtonbreeze" target="_blank">Facebook</a> |
+        <a href="https://www.instagram.com/harringtonbreeze" target="_blank">Instagram</a> |
+        <a href="https://www.tiktok.com/@harringtonbreeze" target="_blank">TikTok</a>
+      </div>
+    </section>
+    <div class="footer-nav">
+      <a href="index.html">Home</a> |
+      <a href="burgers.html">Burgers</a> |
+      <a href="kebabs.html">Kebabs</a> |
+      <a href="seafood.html">Seafood</a> |
+      <a href="about.html">About</a> |
+      <a href="contact.html">Contact</a>
+    </div>
+    <p style="font-size: 0.9rem; color: #888;">Website created by Adhip Pandey</p>
+  </footer>
+
+</body>
+</html>

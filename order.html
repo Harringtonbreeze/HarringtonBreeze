@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Order Online | Harrington Breeze</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="order.js"></script>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav>
+      <div class="logo">Harrington Breeze</div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="order.html" class="active">Order Online</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Order Page -->
+  <main>
+    <div class="order-container">
+      <!-- Left Sidebar (Categories) -->
+      <aside class="order-sidebar">
+        <h3>Categories</h3>
+        <ul>
+          <li><a href="#burgers">Burgers</a></li>
+          <li><a href="#seafood">Seafood</a></li>
+          <li><a href="#kebabs">Kebabs</a></li>
+          <li><a href="#sides">Sides</a></li>
+        </ul>
+      </aside>
+
+      <!-- Menu Section (Items) -->
+      <section class="menu-items">
+        <h2>Burgers</h2>
+        <div id="burgers" class="menu-grid">
+          <div class="menu-item">
+            <img src="images/portuguese-burger.jpg" alt="Portuguese Burger">
+            <h4>Portuguese Burger</h4>
+            <p>A delicious burger with spicy mayo, lettuce, cheese, and peri-peri sauce.</p>
+            <span class="price">$12.90</span>
+            <button class="add-to-cart" onclick="addToCart('Portuguese Burger', 12.90)">Add to Cart</button>
+          </div>
+          <!-- Add more items here -->
+        </div>
+
+        <h2>Seafood</h2>
+        <div id="seafood" class="menu-grid">
+          <div class="menu-item">
+            <img src="images/fish-and-chips.jpg" alt="Fish & Chips">
+            <h4>Fish & Chips</h4>
+            <p>Classic crispy battered fish with a generous serving of chips.</p>
+            <span class="price">$16.90</span>
+            <button class="add-to-cart" onclick="addToCart('Fish & Chips', 16.90)">Add to Cart</button>
+          </div>
+          <!-- Add more items here -->
+        </div>
+      </section>
+
+      <!-- Right Sidebar (Cart) -->
+      <aside class="cart-sidebar">
+        <h3>Your Cart</h3>
+        <div id="cart-items">
+          <p>Your cart is empty</p>
+        </div>
+        <div class="cart-total">
+          <h4>Total: $<span id="total-price">0.00</span></h4>
+          <button class="checkout" onclick="checkout()">Checkout</button>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <p>Visit us at: 3/15 Beach Street, Harrington NSW 2427</p>
+      <p>Phone: <a href="tel:+61405618044">+61 405 618 044</a></p>
+      <p>Email: <a href="mailto:adhippandey2007@gmail.com">adhippandey2007@gmail.com</a></p>
+    </div>
+    <p style="font-size: 0.9rem; color: #888; text-align:center;">Website created by Adhip Pandey</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Harrington Breeze</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <style>
+    @keyframes rollIn {
+      0% {
+        opacity: 0;
+        transform: translateX(-100%) rotate(-360deg);
+      }
+      100% {
+        opacity: 1;
+        transform: translateX(0) rotate(0deg);
+      }
+    }
+
+    .logo {
+      font-size: 2rem;
+      font-weight: bold;
+      text-align: center;
+      margin-top: 20px;
+      animation: rollIn 1s ease-out;
+    }
+
+    .top-header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    nav#mainNav ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      list-style: none;
+      padding: 0;
+      margin: 10px 0;
+    }
+
+    nav#mainNav ul li {
+      margin: 5px;
+    }
+
+    nav#mainNav ul li a {
+      padding: 8px 16px;
+      background-color: #d32f2f;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    nav#mainNav ul li a:hover {
+      background-color: #b71c1c;
+    }
+
+    /* Hide description and price initially */
+    .description, .price {
+      display: none;
+      margin-top: 10px;
+      font-size: 1em;
+      color: #444;
+    }
+
+    .description.show, .price.show {
+      display: block;
+    }
+
+    .item {
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header with Logo and Nav -->
+  <header>
+    <div class="top-header">
+      <div class="logo">Harrington Breeze</div>
+      <nav id="mainNav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="breakfast.html">Breakfast</a></li>
+          <li><a href="burgers.html">Burgers</a></li>
+          <li><a href="kebabs.html">Kebabs</a></li>
+          <li><a href="seafood.html">Seafood</a></li>
+          <li><a href="addons.html">Add-Ons</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Welcome to Harrington Breeze</h1>
+    <p>Takeaway done right! Serving up burgers, fish & chips, kebabs, and more with a great view of the water.</p>
+  </section>
+
+  <!-- Menu Section -->
+  <main>
+    <section id="menu" class="menu">
+      <h2>Special Menu</h2>
+      <div class="menu-grid">
+
+  <main>
+    <section class="menu">
+      <h2>Chicken Burgers</h2>
+      <div class="menu-grid">
+        <div class="item">
+          <img src="images/single.jpg" alt="Single Portuguese Burger">
+          <h3>Single Portuguese Burger</h3>
+          <p>Freshly marinated chicken breast, melted cheese, special mayo, peri sauce, and crisp lettuce.</p>
+          <span>$13.90</span>
+        </div>
+        <div class="item">
+          <img src="images/doubleport.jpg" alt="Double Portuguese Burger">
+          <h3>Double Portuguese Burger</h3>
+          <p>Freshly marinated chicken breast fillets, melted cheese, special mayo, peri sauce, and crisp lettuce.</p>
+          <span>$16.50</span>
+        </div>
+        <div class="item">
+          <img src="images/tropical-chicken.jpg" alt="Tropical Chicken Burger">
+          <h3>Tropical Chicken</h3>
+          <p>Marinated chicken breast, cheese, crispy bacon, sweet-chili sauce, sour cream, pineapple, and lettuce.</p>
+          <span>$16.50</span>
+        </div>
+        <div class="item">
+          <img src="images/chicken-schnitzel.jpg" alt="Chicken Schnitzel Burger">
+          <h3>Chicken Schnitzel</h3>
+          <p>Freshly marinated chicken breast fillets with special mayo and served with freshly chopped lettuce and tomatoes.</p>
+          <span>$13.90<br><small>(Make it Works for extra $5.50)</small></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="menu">
+      <h2>Beef Burgers</h2>
+      <div class="menu-grid">
+        <div class="item">
+          <img src="images/fish-burger.jpg" alt="Fish Burger">
+          <h3>Fish Burger</h3>
+          <p>Freshly toasted bun, crispy fish fillet, freshly chopped lettuce, and tartare sauce.</p>
+          <span>$13.90</span>
+        </div>
+        <div class="item">
+          <img src="images/breeze-double-beef.jpg" alt="Breeze Double Beef Burger">
+          <h3>Breeze Double Beef</h3>
+          <p>Freshly made double prime beef mince, stacked with 2 slices of melted cheese, four sliced pickles, and sauce of your choice.</p>
+          <span>$14.90</span>
+          <p><strong>Extra:</strong> Add Bacon for an extra $2.50</p>
+        </div>
+        <div class="item">
+          <img src="images/aussie-burger.jpg" alt="Aussie Burger">
+          <h3>Aussie Burger</h3>
+          <p>Prime beef mince, crispy lettuce, grilled onion, juicy tomatoes, beetroot, and your choice of sauce.</p>
+          <span>$13.90<br><small>(Make it Works for extra $5.50)</small></span>
+        </div>
+        <div class="item">
+          <img src="images/texas-burger.jpg" alt="Texas Burger">
+          <h3>Texas Burger</h3>
+          <p>Prime beef mince with crispy battered onion rings, pickles, lettuce, tomato sauce, and mustard.</p>
+          <span>$14.90</span>
+        </div>
+        <div class="item">
+          <img src="images/veggie-burger.jpg" alt="Veggie Burger">
+          <h3>Veggie Burger</h3>
+          <p>Crispy veggie patty, special mayo, freshly chopped lettuce, tomato, and beetroot.</p>
+          <span>$13.90</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <section class="footer-content">
+      <h2>Contact Us</h2>
+      <p>Visit us at: 3/15 Beach Street, Harrington NSW 2427</p>
+      <p>Phone: <a href="tel:+61405618044">+61 405 618 044</a></p>
+      <p>Email: <a href="mailto:adhippandey2007@gmail.com">adhippandey2007@gmail.com</a></p>
+      <div class="socials">
+        <a href="https://www.facebook.com/harringtonbreeze" target="_blank">Facebook</a> |
+        <a href="https://www.instagram.com/harringtonbreeze" target="_blank">Instagram</a> |
+        <a href="https://www.tiktok.com/@harringtonbreeze" target="_blank">TikTok</a>
+      </div>
+    </section>
+    <div class="footer-nav">
+      <a href="index.html">Home</a> |
+      <a href="breakfast.html">Breakfast</a> | 
+      <a href="burgers.html">Burgers</a> |
+      <a href="kebabs.html">Kebabs</a> |
+      <a href="seafood.html">Seafood</a> |
+      <a href="about.html">About</a> |
+      <a href="contact.html">Contact</a>
+    </div>
+    <p style="font-size: 0.9rem; color: #888; text-align:center;">Website created by Adhip Pandey</p>
+  </footer>
+
+  <!-- Toggle description and price script -->
+  <script>
+    function toggleDescriptionAndPrice(element) {
+      const description = element.querySelector('.description');
+      const price = element.querySelector('.price');
+      description.classList.toggle('show');
+      price.classList.toggle('show');
+    }
+
+    // Auto scroll on page load
+    window.addEventListener('load', () => {
+      window.scrollTo({
+        top: window.innerHeight / 2,
+        behavior: 'smooth'
+      });
+    });
+  </script>
+
+</body>
+</html>
